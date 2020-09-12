@@ -44,18 +44,9 @@ You can download the yolov3 weights by clicking [here](https://pjreddie.com/medi
 python load_weights.py
 ```
 
-### STEP 6: Install node modul
-```
-cd anti-covidnet-react
-npm install
-cd ..
-```
 
-### STEP 7: Activate Anti-COVIDnet Scripts
+### STEP 6: Activate Anti-COVIDnet Scripts
 ```
-# Backend
+# Server
 python manage.py runserver
-# Frontend 
-cd anti-covidnet-react
-npm start
 ```
