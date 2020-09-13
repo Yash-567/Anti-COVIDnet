@@ -86,7 +86,7 @@ class Mask extends Component {
     return (
       <div className="row">
         <div className="col-8 text-center">
-          <h1 className={classes.heading}>Mast Detection Graph</h1>
+          <h1 className={classes.heading}>Mask Detection Graph</h1>
           <div style={{ minHeight: "300px" }}>
             <Chart
               options={this.state.options}
@@ -104,7 +104,7 @@ class Mask extends Component {
               your surroundings. The violation percentage will be shown on the
               graph alongside.
             </p>
-            <div onClick={this.activateDetector} className="btn btn-success">
+            <div onClick={this.activateDetector} className="btn btn-danger">
               Activate Detector
             </div>
             <h6>

@@ -10,14 +10,14 @@ class App extends Component {
   };
 
   authListener() {
-    // fire.auth().onAuthStateChanged((user) => {
-    //   if (user) {
-    //     this.setState({ user });
-    //   } else {
-    //     console.log("no user logon");
-    //     this.setState({ user: null });
-    //   }
-    // });
+    fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({ user });
+      } else {
+        console.log("no user logon");
+        this.setState({ user: null });
+      }
+    });
   }
 
   componentDidMount() {

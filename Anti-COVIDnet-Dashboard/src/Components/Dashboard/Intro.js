@@ -11,37 +11,67 @@ class Intro extends Component {
   state = {
     email: "",
     password: "",
+    loading: false,
+    errorMessage: null,
   };
   handleChange = (event) => {
     let stateObj = this.state;
     stateObj[event.target.name] = event.target.value;
     this.setState({
       ...stateObj,
+      errorMessage: null,
+      loading: false,
     });
   };
 
   login = (e) => {
     e.preventDefault();
+    this.setState({
+      ...this.state,
+      loading: true,
+    });
     fire
       .auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
+        this.setState({
+          ...this.state,
+          loading: false,
+        });
         console.log(u);
       })
       .catch((err) => {
+        this.setState({
+          ...this.state,
+          loading: false,
+          errorMessage: "* " + err.message,
+        });
         console.log(err);
       });
   };
 
   signup = (e) => {
     e.preventDefault();
+    this.setState({
+      ...this.state,
+      loading: true,
+    });
     fire
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
+        this.setState({
+          ...this.state,
+          loading: false,
+        });
         console.log(u);
       })
       .catch((err) => {
+        this.setState({
+          ...this.state,
+          loading: false,
+          errorMessage: err.message,
+        });
         console.log(err);
       });
   };
@@ -65,8 +95,8 @@ class Intro extends Component {
                   </span>
                 </div>
                 <input
+                  className={"form-control " + classes.myInput}
                   type="text"
-                  class="form-control"
                   placeholder="Email id"
                   aria-label="Email id"
                   name="email"
@@ -80,8 +110,8 @@ class Intro extends Component {
                   </span>
                 </div>
                 <input
+                  className={"form-control " + classes.myInput}
                   type="password"
-                  class="form-control"
                   placeholder="Password"
                   aria-label="Password"
                   name="password"
@@ -92,7 +122,7 @@ class Intro extends Component {
                 <div className={classes.mybuttons + " text-center"}>
                   <button
                     onClick={this.login}
-                    className="btn btn-danger m-auto"
+                    className={classes.mybtn + " btn m-auto"}
                   >
                     Login
                   </button>
@@ -100,15 +130,23 @@ class Intro extends Component {
                 <div className={classes.mybuttons + " text-center"}>
                   <button
                     onClick={this.signup}
-                    className="btn btn-danger m-auto"
+                    className={classes.mybtn + " btn m-auto"}
                   >
                     Sign Up
                   </button>
                 </div>
+                <div className={classes.feedback}>
+                  {this.state.loading
+                    ? "...Please wait while we authenticate you"
+                    : ""}
+                </div>
+                <div className={classes.feedback}>
+                  {this.state.errorMessage ? this.state.errorMessage : ""}
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-4 d-none">
             <img src={background} style={{ width: "100%" }} />
           </div>
         </div>

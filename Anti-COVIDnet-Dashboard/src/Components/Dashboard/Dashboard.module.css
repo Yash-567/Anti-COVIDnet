@@ -1,16 +1,19 @@
 .introText {
-    margin-top: 120px;
+    padding-top: 120px;
+    color: white;
 }
 
 .introText h2 {
     font-size: 25px;
     font-family: sans-serif;
     font-weight: 600;
+    color: white;
 }
 
 .useCase p {
     margin-bottom: 0;
     margin-left: 25%;
+    color: p;
 }
 
 .card {
@@ -18,7 +21,7 @@
     width: 80%;
     /* border: 1px solid #eee; */
     margin-right: auto;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     padding: 30px;
 }
 
@@ -29,4 +32,31 @@
 
 .mybuttons button {
     width: 100px;
+}
+
+.myInput:hover, .myInput:focus {
+    border-color: #7BD5F5;
+    outline: none;
+    box-shadow: none;
+}
+
+.feedback {
+    color: white;
+    font-size: 14px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.frontPage {
+    background-image: url(../../Assets//back2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 700px;
+}
+
+.mybtn{
+    background-color: #7B7FF6;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }

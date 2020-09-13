@@ -9,9 +9,11 @@ class Dashboard extends Component {
   render() {
     return (
       <>
-        <Header page="dashboard" />
-        <div className="container">
-          <Intro />
+        <Header page="home" />
+        <div className={classes.frontPage}>
+          <div className={" container"}>
+            <Intro />
+          </div>
         </div>
       </>
     );

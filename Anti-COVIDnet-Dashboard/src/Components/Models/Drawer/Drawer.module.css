@@ -2,7 +2,16 @@
     position: fixed;
     left: 0;
     width: 250px;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #ccc;
     color: white;
     height: 100%;
+    background-color: #eee;
+}
+
+.drawer a:hover{
+    text-decoration: none;
+}
+
+.drawer a{
+    font-size: 18px;
 }

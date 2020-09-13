@@ -8,13 +8,12 @@ class Header extends Component {
     fire.auth().signOut();
   };
   render() {
+    let bgClass = "";
+    if (this.props.page === "home") {
+      bgClass = classes.transparent + " navbar-dark";
+    } else bgClass = " " + classes.actualNavbar;
     return (
-      <nav
-        class={
-          classes.bckg +
-          " navbar fixed-top navbar-expand-lg navbar-light bg-light"
-        }
-      >
+      <nav class={bgClass + " navbar fixed-top navbar-expand-lg "}>
         <div className="container">
           <a class={classes.brand + " navbar-brand"} href="/">
             Anti-<span>COVID</span>net
@@ -34,7 +33,7 @@ class Header extends Component {
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              {/* {this.props.user ? (
+              {this.props.user ? (
                 <Link to="/">
                   <li className={classes.navLink} onClick={this.logout}>
                     Logout
@@ -44,7 +43,7 @@ class Header extends Component {
                 <Link to="/">
                   <li className={classes.navLink}>Login</li>
                 </Link>
-              )} */}
+              )}
             </ul>
           </div>
         </div>

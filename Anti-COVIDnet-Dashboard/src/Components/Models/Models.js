@@ -25,14 +25,15 @@ class Models extends Component {
                 {/* <Link to="/dashboard/case_predictor">
                   <div className={classes.drawerLink}>Case Predictor</div>
                 </Link> */}
-                <Link to="/dashboard/gallery">
-                  <div className={classes.drawerLink}>Gallery</div>
-                </Link>
+
                 <Link to="/dashboard/mask">
                   <div className={classes.drawerLink}>Mask Detector</div>
                 </Link>
                 <Link to="/dashboard/thermal">
                   <div className={classes.drawerLink}>Thermal Detector</div>
+                </Link>
+                <Link to="/dashboard/gallery">
+                  <div className={classes.drawerLink}>Gallery</div>
                 </Link>
               </div>
             </MyDrawer>
@@ -40,7 +41,7 @@ class Models extends Component {
               <div className="container-fluid">
                 <Switch>
                   <Route exact path="/">
-                    <Redirect to="/dashboard/gallery" />
+                    <Redirect to="/dashboard/live_demo" />
                   </Route>
                   <Route
                     exact
@@ -52,16 +53,8 @@ class Models extends Component {
                     path="/dashboard/live_demo"
                     component={LiveGraph}
                   />
-                  <Route
-                    exact
-                    path="/dashboard/thermal"
-                    component={Thermal}
-                  />
-                  <Route
-                    exact
-                    path="/dashboard/mask"
-                    component={Mask}
-                  />
+                  <Route exact path="/dashboard/thermal" component={Thermal} />
+                  <Route exact path="/dashboard/mask" component={Mask} />
                   <Route exact path="/dashboard/gallery" component={Gallery} />
                 </Switch>
               </div>

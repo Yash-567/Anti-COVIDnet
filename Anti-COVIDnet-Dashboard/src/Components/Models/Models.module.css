@@ -1,9 +1,11 @@
 .drawerLink {
+    text-transform: uppercase;
     font-size: 14px;
     padding: 10px;
     border-bottom: 1px solid #eee;
     color: rgb(56,56,56);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .drawerLink:hover{
@@ -12,4 +14,5 @@
 
 .active {
     font-weight: 600;
+    color: red;
 }

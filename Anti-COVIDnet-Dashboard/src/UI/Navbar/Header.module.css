@@ -8,10 +8,11 @@
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 0;
+    color: black;
 }
 
 .brand span {
-    color: #e82231;
+    color: white;
 }
 
 .brand p {
@@ -23,9 +24,10 @@
 }
 
 .navLink {
-    color: rgb(56, 56, 56);
+    color: white;
     padding: 5px;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .active {
@@ -33,4 +35,13 @@
     color: black;
     padding: 5px;
     font-size: 14px;
+}
+
+.transparent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.actualNavbar {
+    background-color: #7B7FF6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
