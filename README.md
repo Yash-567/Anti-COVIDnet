@@ -16,12 +16,21 @@
 <h2 id="how-does-it-work">How Does it Work?</h2>
 
 <ol>
-<li><p><strong>Social Distancing Monitor</strong></p>
+<li>
+  <h5><strong>Social Distancing Analyzer</strong></h5>
+  <p>In this step, social distancing detection logic is applied to any video source and the frames that record violations are extracted in real time which are instantly uploaded to the cloud storage. These images are displayed on the dashboard. The system gives instructions over to the IoT device to instruct people violating norms.</p>
+  <img src="https://github.com/Yash-567/Anti-COVIDnet/blob/master/Images/Social-distancing.png" width="800" height="600">
   </li>
-<li><p><strong>Face Mask Detection</strong></p>
+<li>
+  <h5><strong>Face mask detection</strong></h5>
+  <p>This module detects whether a person is wearing a mask or not. The feed input to the system is analysed for people not wearing face mask. The violated frames are uploaded to the cloud storage which can later accessed whenever required. The system gives instructions over to the IoT device to instruct people violating norms.</p>
+  <img src="https://github.com/Yash-567/Anti-COVIDnet/blob/master/Images/face_mask.png" width="600" height="400"> 
   </li>
-<li><p><strong>Thermal Screening</strong></p>
+<li>
+  <h5><strong>Thermal Screening</strong></h5>
+  <p>Thermal screening module uses a thermal scanning camera that processes the input stream to identify people having temperature greater than a threshold value. Depending on the requirement of the location, automatic instructions can be delivered using IoT devices.</p>
   </li>
+  <img src="https://github.com/Yash-567/Anti-COVIDnet/blob/master/Images/thermal.jpg" width="500" height="600">
 </ol>
 
 <p>Now one of the most prominent features of Anti-COVIDnet is preventing such violations from occurring in the first place. Our system keeps track of how many violations occur at various places and then accurately analyses which areas could prove to be risky zones in the offices/colleges and then alerts the gathered crowd in that area instantly to disperse and follow the social distancing norms.</p>
@@ -81,30 +90,6 @@
 <h2 id="demo">Demo</h2>
 
 <p><a href=""></a></p>
-
-
-
-<h2 id="usage">Usage</h2>
-
-<ol>
-<li>
-  <h5 id=""><strong></strong></h5>
-  <p></p>
-  </li>
-<li>
-  <h5 id=""><strong></strong></h5>
-  <p></p>
-  </li>
-<li>
-  <h5 id=""><strong></strong></h5>
-  <p></p>
-  </li>
-<li>
-  <h5 id=""><strong></strong></h5>
-  <p></p>
-  </li>
-</ol>
-
 
 
 <h2 id="built-with">Built with</h2>
