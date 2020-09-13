@@ -20,10 +20,12 @@
 <h2 id="how-does-it-work">How Does it Work?</h2>
 
 <ol>
-<li><p></p></li>
-<li><p></p></li>
-<li><p></p></li>
-<li><p></p></li>
+<li><p><strong>Social Distancing Monitor</strong></p>
+  </li>
+<li><p><strong>Face Mask Detection</strong></p>
+  </li>
+<li><p><strong>Thermal Screening</strong></p>
+  </li>
 </ol>
 
 <p>Now one of the most prominent features of Anti-COVIDnet is preventing such violations from occurring in the first place. Our system keeps track of how many violations occur at various places and then accurately analyses which areas could prove to be risky zones in the offices/colleges and then alerts the gathered crowd in that area instantly to disperse and follow the social distancing norms.</p>
@@ -54,14 +56,29 @@
 <h2 id="features">Features</h2>
 
 
-<h5 id=""><strong></strong></h5>
+<h5 id=""><strong>Real-time</strong></h5>
 
-<p></p>
+<p>The system is entirely real-time with neglible latency</p>
 
 
-<h5 id=""><strong></strong></h5>
+<h5 id=""><strong>IoT integration to automate the system</strong></h5>
 
-<p></p>
+<p>IoT devices can be used to deliver automatic instructions over speakers</p>
+
+
+<h5 id=""><strong>Cloud support</strong></h5>
+
+<p>Firebase storage and firestore is used to store data for better management and remote access</p>
+
+
+<h5 id=""><strong>Privacy centered</strong></h5>
+
+<p>No personally identifiable information is either stored or used without user's consent</p>
+
+
+<h5 id=""><strong>Algorithmic Efficiency</strong></h5>
+
+<p>The application stands out in comparison with other similar applications</p>
 
 
 
@@ -74,10 +91,22 @@
 <h2 id="usage">Usage</h2>
 
 <ol>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>
+  <h5 id=""><strong></strong></h5>
+  <p></p>
+  </li>
+<li>
+  <h5 id=""><strong></strong></h5>
+  <p></p>
+  </li>
+<li>
+  <h5 id=""><strong></strong></h5>
+  <p></p>
+  </li>
+<li>
+  <h5 id=""><strong></strong></h5>
+  <p></p>
+  </li>
 </ol>
 
 
@@ -93,6 +122,14 @@
 <li>React JS</li>
 <li>Firebase</li>
 </ul>
+
+<code><img src="https://img.icons8.com/color/65/000000/python.png"/></code>
+<code><img src="https://img.icons8.com/color/80/000000/django.png"/></code>
+<code><img src="https://img.icons8.com/color/65/000000/html-5.png"/></code>
+<code><img src="https://img.icons8.com/color/65/000000/css3.png"/></code>
+<code><img src="https://img.icons8.com/color/65/000000/javascript.png"/></code><br/>
+<code><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg"></code>
+<code><img width="150" height="75" src="https://i.ytimg.com/vi/fgT6r4f9Apc/maxresdefault.jpg"></code>
 
 
 
@@ -131,7 +168,7 @@ You can download the yolov3 weights by clicking [here](https://pjreddie.com/medi
 
 ### STEP 5: Run load_weights.py
 ```
-python load_weights.py
+python load_weights.py  
 ```
 
 ### STEP 6: Activate Anti-COVIDnet Scripts
