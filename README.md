@@ -45,7 +45,6 @@
 <ul>
 <li><a href="#Features">Features</a></li>
 <li><a href="#Demo">Demo</a></li>
-<li><a href="#Usage">Usage</a></li>
 <li><a href="#built-with">Built with</a></li>
 <li><a href="#Installation">Installation</a></li>
 <li><a href="#Authors">Authors</a></li>
