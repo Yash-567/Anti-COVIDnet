@@ -150,8 +150,16 @@ You can download the yolov3 weights by clicking [here](https://pjreddie.com/medi
 ```
 python load_weights.py  
 ```
+### STEP 6: Initialising the Dashboard
+```
+cd Anti-COVIDnet-Dashboard
+npm install
+npm start
 
-### STEP 6: Activate Anti-COVIDnet Scripts
+```
+The dashboard can be checked out on "http://localhost:3000" once the development server starts.
+
+### STEP 7: Activate Anti-COVIDnet Scripts
 ```
 # Server
 python manage.py runserver
