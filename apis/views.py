@@ -303,6 +303,7 @@ def main(argv):
     ### Uncomment below line if you want to automatically delete raw video received from frontend after processing
     # os.remove(FILE_URL)
 
+@csrf_exempt
 def getViolationPercentage(request):
     global PROCESSING_STATUS, VIOLATION_PERCENTAGE
     if PROCESSING_STATUS:

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Chart from "react-apexcharts";
 import classes from "./Mask.module.css"
+import { TextField } from "@material-ui/core";
 let i = 0;
 
 class Mask extends Component {
@@ -104,6 +105,9 @@ class Mask extends Component {
               your surroundings. The violation percentage will be shown on the
               graph alongside.
             </p>
+            <div className="my-1 pb-3">
+              <TextField fullWidth color="#e82231" label="IP Address of the camera" />
+            </div>
             <div onClick={this.activateDetector} className="btn btn-danger">
               Activate Detector
             </div>
