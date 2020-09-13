@@ -188,7 +188,7 @@ python manage.py runserver
 
 <h2 id="license">License</h2>
 
-<p>This project is licensed under the <a href="https://opensource.org/licenses/GPL-3.0">GPL-3 License</a> - see the <a href=""><code>LICENSE</code></a> file for details.</p>
+<p>This project is licensed under the <a href="https://opensource.org/licenses/GPL-3.0">GPL-3 License</a> - see the <a href="https://github.com/Yash-567/Anti-COVIDnet/blob/master/LICENSE"><code>LICENSE</code></a> file for details.</p>
 
 <p>Let us know your thoughts, we're open for ideas!</p>
 
