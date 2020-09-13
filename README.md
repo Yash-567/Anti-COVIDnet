@@ -152,7 +152,7 @@ python load_weights.py
 ```
 ### STEP 6: Initialising the Dashboard
 ```
-cd Anti-COVIDnet-Dashboard
+cd ./Anti-COVIDnet-Dashboard
 npm install
 npm start
 
