@@ -172,8 +172,6 @@ def main(argv):
 
     out = None
 
-    # if FLAGS.output:
-        # by default VideoCapture returns float instead of int
     width = int(vid.get(cv2.CAP_PROP_FRAME_WIDTH))
     height = int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT))
     print("height: ",height)
@@ -195,11 +193,6 @@ def main(argv):
                 continue
             else: 
                 break
-        # VIOLATION_FRAME = img
-        # img = imutils.resize(img, width=450)
-        # cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        # np.dstack([img, img, img])
-        img2 = img.copy()
         img_in = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
         img_in = tf.expand_dims(img_in, 0)
         img_in = transform_images(img_in, 416)

@@ -102,7 +102,9 @@ class Thermal extends Component {
                 <div className="col-4 mt-5">
                     <div>
                         <p>
-                            Click on the button below to activate the detector and analyze your surroundings. The violation percentage will be shown on the graph alongside.
+                            Click on the button below to activate the detector and analyze your surroundings. The violation count will be shown on the graph alongside.
+                            <br></br>
+                            Enter the rtsp link of the IP camera:
                         </p>
                         <div className="my-1 pb-3">
                             <TextField fullWidth color="#e82231" label="IP Address of the camera" />
