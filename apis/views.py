@@ -34,6 +34,36 @@ from tensorflow.keras.models import load_model
 from imutils.video import VideoStream
 import imutils
 
+## Firebase upload
+import pyrebase
+from datetime import datetime
+############################################## CLOUD START ##########################################################
+## Firebase account config
+### Fill details according to your firebase database config for backup
+config = {
+	"apiKey": None,
+    "authDomain": None,
+    "databaseURL": None,
+    "projectId": None,
+    "storageBucket": None,
+    "messagingSenderId": None,
+    "appId": None,
+    "measurementId": None,
+    ### Add location of json file here in service account
+    "serviceAccount": None
+}
+
+## Uncomment below 2 lines after setting up config file 
+# firebase = pyrebase.initialize_app(config)
+# storage = firebase.storage()
+
+## Uncomment below function after correctly setting up config file
+# def firebase_upload(img):
+# 	today = datetime.now()
+# 	path_cloud = str(today.date())+"/"+str(today.strftime('%Y-%m-%d %H:%M:%S'))+" "+str(img)
+# 	storage.child(path_cloud).put(img)
+########################################## CLOUD END ###############################################################
+
 area = None
 PROCESSING_STATUS = False
 TOTAL_PEOPLE = 0
@@ -241,7 +271,12 @@ def main(argv):
         print("Violation percentage: ", violators_for_frame)
         violator_count_list.append(int(violators_for_frame))
         ###
-        out.write(img)
+        ### Call to firebase upload function
+        # if violators_for_frame > 20:
+        #     cv2.imwrite("temp.png",img)
+        #     firebase_upload("temp.png")
+        #     os.remove("temp.png")
+        
         frame_index = frame_index + 1
 
         # press q to quit
