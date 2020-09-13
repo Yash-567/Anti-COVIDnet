@@ -71,6 +71,7 @@ TOTAL_VIOLATORS = 0
 VIOLATION_PERCENTAGE = 0
 VIOLATION_FRAME = None
 FILE_URL = None
+SOCIAL_DIST_VIOLATION_COUNTER = 0
 
 # Create your views here.
 def index(request):
@@ -122,6 +123,14 @@ def activateDetector(request):
         except SystemExit:
             pass
         return HttpResponse("<h1>Not able to process video</h1>")
+
+# def social_dist_violation_frame_handler(img):
+#     global SOCIAL_DIST_VIOLATION_COUNTER
+#     SOCIAL_DIST_VIOLATION_COUNTER = (SOCIAL_DIST_VIOLATION_COUNTER + 1)%20
+#     if SOCIAL_DIST_VIOLATION_COUNTER == 19:
+#         cv2.imwrite("temp.png",img)
+#         firebase_upload("temp.png")
+#         os.remove("temp.png")
 
 def main(argv):
     # print("location recieved in main as: ", e)
@@ -273,6 +282,7 @@ def main(argv):
         ###
         ### Call to firebase upload function
         # if violators_for_frame > 20:
+        #     social_dist_violation_frame_handler(img)
         #     cv2.imwrite("temp.png",img)
         #     firebase_upload("temp.png")
         #     os.remove("temp.png")
