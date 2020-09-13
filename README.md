@@ -13,10 +13,6 @@
 
 <hr/>
 
-<p><a href=""><img src="" alt="" class="" /></a></p>
-
-<hr />
-
 <h2 id="how-does-it-work">How Does it Work?</h2>
 
 <ol>
