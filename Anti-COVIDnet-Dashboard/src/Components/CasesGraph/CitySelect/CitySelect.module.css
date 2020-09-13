@@ -1,0 +1,38 @@
+.dropdownButton {
+    border-bottom: 2px solid lightseagreen;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+    font-size: 12px;
+    width: max-content;
+}
+
+.dropdownButton:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+    color: white;
+}
+
+.dropdownMenu {
+    max-height: 400px;
+    overflow-y: scroll;
+    width: 800px;
+}
+
+.dropdownItem {
+    display: inline-block;
+    width: 25%;
+    padding: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    font-weight: 600;
+    background-color: lightseagreen;
+    color: white;
+}

@@ -1,0 +1,36 @@
+.bckg {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    z-index: 1500;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.brand span {
+    color: #e82231;
+}
+
+.brand p {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    padding-left: 60px;
+    margin-bottom: 0;
+}
+
+.navLink {
+    color: rgb(56, 56, 56);
+    padding: 5px;
+    font-size: 14px;
+}
+
+.active {
+    font-weight: 700;
+    color: black;
+    padding: 5px;
+    font-size: 14px;
+}

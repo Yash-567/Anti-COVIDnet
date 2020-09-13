@@ -1,0 +1,8 @@
+.drawer {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    border-right: 1px solid #eee;
+    color: white;
+    height: 100%;
+}

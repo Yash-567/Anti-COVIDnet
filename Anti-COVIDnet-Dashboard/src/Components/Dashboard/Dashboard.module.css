@@ -1,0 +1,32 @@
+.introText {
+    margin-top: 120px;
+}
+
+.introText h2 {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.useCase p {
+    margin-bottom: 0;
+    margin-left: 25%;
+}
+
+.card {
+    margin-top: 30px;
+    width: 80%;
+    /* border: 1px solid #eee; */
+    margin-right: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.mybuttons {
+    display: inline-block;
+    padding: 10px;
+}
+
+.mybuttons button {
+    width: 100px;
+}

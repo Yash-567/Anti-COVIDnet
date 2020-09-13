@@ -1,0 +1,15 @@
+.drawerLink {
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: rgb(56,56,56);
+    text-decoration: none;
+}
+
+.drawerLink:hover{
+    text-decoration: none;
+}
+
+.active {
+    font-weight: 600;
+}
