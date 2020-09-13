@@ -97,11 +97,6 @@ def main(argv):
     # print("location recieved in main as: ", e)
     ###################################
     global VIOLATION_PERCENTAGE, PROCESSING_STATUS, VIOLATION_FRAME
-    centers = list()
-    close_pair = list()
-    status = list()
-    s_close_pair = list()
-    done = list()
     violator_count_list = list()
     ###################################
     # Definition of the parameters

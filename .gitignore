@@ -13,3 +13,7 @@
 /yolov3_tf2/__pycache__
 /weights/yolov3-spp.weights
 /result.avi
+/req1.txt
+/thermal/__pycache__
+/thermal/migrations/__pycache__
+/utils/__pycache__
