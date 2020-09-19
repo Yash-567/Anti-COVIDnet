@@ -46,9 +46,9 @@ class Thermal extends Component {
             }).catch(err => {
                 console.log(err)
             })
-        this.interval = setInterval(() => {
-            this.getViolations();
-        }, 2000)
+        // this.interval = setInterval(() => {
+        //     this.getViolations();
+        // }, 2000)
     }
 
     getViolations = () => {

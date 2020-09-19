@@ -45,9 +45,9 @@ class Mask extends Component {
       .catch((err) => {
         console.log(err);
       });
-    this.interval = setInterval(() => {
-      this.getViolations();
-    }, 2000);
+    // this.interval = setInterval(() => {
+    //   this.getViolations();
+    // }, 2000);
   };
 
 //   getViolations = () => {
@@ -86,7 +86,7 @@ class Mask extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col-8 text-center">
+        {/* <div className="col-8 text-center">
           <h1 className={classes.heading}>Mask Detection Graph</h1>
           <div style={{ minHeight: "300px" }}>
             <Chart
@@ -97,8 +97,9 @@ class Mask extends Component {
               height="300px"
             />
           </div>
-        </div>
+        </div> */}
         <div className="col-4 mt-5">
+        <h1 className={classes.heading}>Mask Detection Graph</h1>
           <div>
             <p>
               Click on the button below to activate the Mask Detector and analyze
