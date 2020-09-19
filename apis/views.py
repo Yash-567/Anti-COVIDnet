@@ -77,6 +77,7 @@ SOCIAL_DIST_VIOLATION_COUNTER = 0
 def index(request):
     return HttpResponse("<h1>Anti-COVIDnet</h1>")
 
+## Camera object for multi threading for real-time CCTV feed support
 class Camera:
     last_frame = None
     last_ready = None
@@ -124,6 +125,8 @@ def activateDetector(request):
             pass
         return HttpResponse("<h1>Not able to process video</h1>")
 
+
+### Added more tolerance so not every violation frame is extracted
 # def social_dist_violation_frame_handler(img):
 #     global SOCIAL_DIST_VIOLATION_COUNTER
 #     SOCIAL_DIST_VIOLATION_COUNTER = (SOCIAL_DIST_VIOLATION_COUNTER + 1)%20
@@ -132,6 +135,7 @@ def activateDetector(request):
 #         firebase_upload("temp.png")
 #         os.remove("temp.png")
 
+##### Social Distancing analyzer main code
 def main(argv):
     # print("location recieved in main as: ", e)
     ###################################
@@ -296,6 +300,7 @@ def main(argv):
     ### Uncomment below line if you want to automatically delete raw video received from frontend after processing
     # os.remove(FILE_URL)
 
+### For live graphs
 @csrf_exempt
 def getViolationPercentage(request):
     global PROCESSING_STATUS, VIOLATION_PERCENTAGE
@@ -427,7 +432,7 @@ def mask_detector():
     cv2.destroyAllWindows()
     vs.stop()
 
-
+### Trigger Mask Detector
 def activateMask(request):
     mask_detector()
     return HttpResponse("<h1>Started mask detector</h1>")

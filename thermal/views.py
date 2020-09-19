@@ -7,8 +7,7 @@ from utils.datasets import *
 from utils.utils import *
 import os
 
-# Create your views here.
-
+### Main logic for Thermal camera analysis
 def detect(save_txt=False, save_img=False):
     img_size = (320, 192) if ONNX_EXPORT else 416  # (320, 192) or (416, 256) or (608, 352) for (height, width)
     out, source, weights, half, view_img = 'output', '0', 'weights/yolov3-spp.weights', False, True
@@ -152,7 +151,7 @@ def detect(save_txt=False, save_img=False):
 
     print('Done. (%.3fs)' % (time.time() - t0))
 
-
+### Trigger thermal camera detector
 def activateThermal(request):
     with torch.no_grad():
         detect()
